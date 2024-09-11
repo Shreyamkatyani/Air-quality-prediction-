@@ -1,0 +1,11 @@
+import numpy as np
+import matplotlib.pyplot as plt
+actual_values = np.array([10,19,20, 23,30,35, 40,48,50,78,34,43,89,90])
+predicted_values = np.array([12, 18, 32, 38, 48,89,56,34,77,67,33,67,56,55,87])
+plt.plot(actual_values, label='Actual Values', marker='o')
+plt.plot(predicted_values, label='Predicted Values', marker='x')
+plt.xlabel('Date')
+plt.ylabel('PM2.5 AQI')
+plt.title('Actual Vs. Predicted Values')
+plt.legend()
+plt.show()
